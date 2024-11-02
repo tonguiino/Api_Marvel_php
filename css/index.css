@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color-scheme: light dark;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* background: rgb(226,13,13);
+background: -moz-linear-gradient(90deg, rgba(226,13,13,1) 0%, rgba(0,0,0,1) 42%, rgba(0,0,0,1) 55%, rgba(226,13,13,1) 100%);
+background: -webkit-linear-gradient(90deg, rgba(226,13,13,1) 0%, rgba(0,0,0,1) 42%, rgba(0,0,0,1) 55%, rgba(226,13,13,1) 100%);
+background: linear-gradient(90deg, rgba(226,13,13,1) 0%, rgba(0,0,0,1) 42%, rgba(0,0,0,1) 55%, rgba(226,13,13,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e20d0d",endColorstr="#e20d0d",GradientType=1); */
+}
+header{
+    background-color:#810C00 ;
+    width: 100%;
+    height: 100px;
+    display: grid;
+    place-items: center;
+}
+.logo{
+    width: 100px;
+}
+
+main{
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100vw;
+    color: black;
+}
+img{
+    border-radius: 15px;
+    width: 200px;
+    margin-bottom: 15px;
+}
+
+.card {
+    width: 20em;
+    height: 39.5em;
+    background: #d0d0d0;
+    padding: 10px;
+    margin-bottom: 50px;
+    transition: 1s ease-in-out;
+    clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card span {
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    display: block;
+    font-size: 1em;
+  }
+  
+  .card .info {
+    font-weight: 400;
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: 0.72em;
+    margin: 1em;
+  }
+  
+  .card .img {
+display: flex;
+justify-content: center;
+  }
+  
+  .card a {
+    color: rgb(255, 0, 0);
+    transition: .4s ease-in-out;
+    width: 100%;
+  }
+  
+  .card a:hover {
+    color: rgb(255, 255, 255);
+  }
+  
+  .card button {
+    padding: 0.8em 1.7em;
+    width: 10em;
+    display: block;
+    margin: auto;
+    border-radius: 25px;
+    border: 1px solid red;
+    font-weight: bold;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    transition: .4s ease-in-out;
+  }
+  
+  .card button:hover {
+    background: red;
+    color: white;
+    cursor: pointer;
+  }
